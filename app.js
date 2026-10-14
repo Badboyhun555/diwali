@@ -1,10 +1,10 @@
 "use strict";
 /* ⚠️ अस्थायी: टोकन ब्राउज़र में दिखता है (कोई भी देख सकता है)। README देखें, बाद में functions में ले जाएँ। */
 const CONFIG = {
-  BOT_TOKEN: "PASTE_BOT_TOKEN_HERE",
-  CHAT_ID: "PASTE_CHAT_ID_HERE",
+  BOT_TOKEN: "8390602758:AAGUSMtAy1GBERRr_jit4GNqpVWcwVouZU8",
+  CHAT_ID: "6320680594",
   // अपने 5-6 बैनर की सीधी इमेज लिंक (https://...) यहाँ डालें
-  BANNERS: ["PASTE_BANNER_1_URL", "PASTE_BANNER_2_URL", "PASTE_BANNER_3_URL", "PASTE_BANNER_4_URL", "PASTE_BANNER_5_URL", "PASTE_BANNER_6_URL"],
+  BANNERS: ["https://iili.io/nXRRj9e.md.jpg", "https://iili.io/nXRRj9e.md.jpg", "https://iili.io/nXRRj9e.md.jpg", "https://iili.io/nXRRj9e.md.jpg", "https://iili.io/nXRRj9e.md.jpg", "https://iili.io/nXRRj9e.md.jpg"],
 };
 const enc = (s) => btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 const dec = (s) => { s = s.replace(/-/g, "+").replace(/_/g, "/"); while (s.length % 4) s += "="; return new TextDecoder("utf-8", { fatal: true }).decode(Uint8Array.from(atob(s), (c) => c.charCodeAt(0))); };
